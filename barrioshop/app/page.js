@@ -28,7 +28,7 @@ export default function Home() {
       name: 'Raices del campo',
       category: 'Productos',
       emoji: '🧴',
-      description: 'Productos de limpieza y hogar'
+      description: 'Productos originarios del campo'
     },
     {
       id: 'tienda4',
@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Header */}
+
       <header className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -80,7 +80,7 @@ export default function Home() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Hero Section */}
+
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
              Compra directo a tus vecinos
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
 
       
-        {/* Filtros */}
+
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Descubre Nuestras Tiendas</h2>
           <div className="flex flex-col md:flex-row gap-4">
@@ -110,7 +110,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Tiendas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredStores.map((store) => (
             <div key={store.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-200 transform hover:scale-105">
@@ -148,15 +147,14 @@ export default function Home() {
 
       </main>
 
-      {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400">
-              © 2024 BarrioShop. Todos los derechos reservados.
+              © 2025 BarrioShop. Todos los derechos reservados.
             </p>
             <p className="text-gray-400 mt-2">
-              Apoyando el comercio local, un barrio a la vez.
+              Apoyando el comercio local
             </p>
           </div>
         </div>

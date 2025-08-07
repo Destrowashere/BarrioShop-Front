@@ -27,7 +27,7 @@ export default function StoreProducts() {
       name: 'Raices del campo',
       category: 'Productos',
       emoji: '🧴',
-      description: 'Productos de limpieza y hogar'
+      description: 'Productos de el campo'
     },
     tienda4: {
       name: 'Cositas y Mas',
@@ -53,7 +53,7 @@ export default function StoreProducts() {
         name: 'Frijoles',
         price: 2500,
         category: 'granos',
-        image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop',
+        image: 'https://lastaquerias.com/wp-content/uploads/2024/08/frijoles-2048x1152.jpg',
         description: 'Frijoles negros frescos'
       },
       {
@@ -69,7 +69,7 @@ export default function StoreProducts() {
         name: 'Azúcar',
         price: 2000,
         category: 'endulzantes',
-        image: 'https://images.unsplash.com/photo-1581441363689-1f3c3c414635?w=400&h=300&fit=crop',
+        image: 'https://th.bing.com/th/id/R.db77927febc8fd9a56ecc377008acda3?rik=I9GdrSBF3UifeA&pid=ImgRaw&r=0',
         description: 'Azúcar refinada'
       },
       {
@@ -77,7 +77,7 @@ export default function StoreProducts() {
         name: 'Sal',
         price: 1500,
         category: 'condimentos',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
+        image: 'https://tse1.explicit.bing.net/th/id/OIP.TrPktOKLg14FP533G4X_2AHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
         description: 'Sal de mesa'
       },
       {
@@ -92,11 +92,11 @@ export default function StoreProducts() {
     tienda2: [
       {
         id: 1,
-        name: 'Café Americano',
+        name: 'Cafe Americano',
         price: 3000,
         category: 'cafe',
         image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop',
-        description: 'Café americano tradicional'
+        description: 'Cafe americano tradicional'
       },
       {
         id: 2,
@@ -108,85 +108,61 @@ export default function StoreProducts() {
       },
       {
         id: 3,
-        name: 'Té Verde',
+        name: 'Te Verde',
         price: 2500,
         category: 'te',
-        image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+        image: 'https://th.bing.com/th/id/R.2eb302e8ca9d280fb9b81e2105442c94?rik=I9%2buxVCpjaC0oQ&riu=http%3a%2f%2fblog.nutritienda.com%2fwp-content%2fuploads%2f2015%2f12%2fFotolia_63877102_Subscription_Monthly_M.jpg&ehk=JF07V0WgVvNAqzGswMiyPRxP8igm2lbKf91oUa4o3TE%3d&risl=&pid=ImgRaw&r=0',
         description: 'Té verde natural'
       },
       {
         id: 4,
-        name: 'Café con Leche',
+        name: 'Cafe con Leche',
         price: 3500,
         category: 'cafe',
-        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop',
-        description: 'Café con leche cremoso'
+        image: 'https://tse3.mm.bing.net/th/id/OIP.UEIllrehWRTEA_B0G-AQcQHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        description: 'Cafe con leche cremoso'
       },
       {
         id: 5,
-        name: 'Té Negro',
+        name: 'Te Negro',
         price: 2000,
         category: 'te',
-        image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
-        description: 'Té negro tradicional'
+        image: 'https://tse2.mm.bing.net/th/id/OIP.7YXgmB71eSMTR6Oa0YL1JwHaE7?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        description: 'Te negro tradicional'
       },
       {
         id: 6,
-        name: 'Café Expresso',
+        name: 'Cafe Expresso',
         price: 2500,
         category: 'cafe',
-        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop',
-        description: 'Café expresso intenso'
+        image: 'https://tse3.mm.bing.net/th/id/OIP.0OZo4MxXXEiJgp85xwZcNAHaFS?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        description: 'Cafe expresso intenso'
       }
     ],
     tienda3: [
       {
         id: 1,
-        name: 'Detergente',
-        price: 8000,
-        category: 'limpieza',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
-        description: 'Detergente para ropa'
+        name: 'Bulto de papa',
+        price: 88000,
+        category: 'Hogar',
+        image: 'https://tse3.mm.bing.net/th/id/OIP.yoZPHX2aijbEiiRwN3OFYwHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        description: 'Bulto de papa sin limpiar'
       },
       {
         id: 2,
-        name: 'Jabón Líquido',
-        price: 5000,
-        category: 'limpieza',
-        image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
-        description: 'Jabón líquido para manos'
+        name: 'Bulto de Maiz',
+        price: 65000,
+        category: 'Hogar',
+        image: 'https://ceragro.com/wp-content/uploads/2021/10/Maiz.png',
+        description: 'Bulto de maiz desgranado'
       },
       {
         id: 3,
-        name: 'Papel Higiénico',
-        price: 3000,
-        category: 'hogar',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
-        description: 'Papel higiénico suave'
-      },
-      {
-        id: 4,
-        name: 'Desinfectante',
+        name: 'Libra de cafe',
         price: 6000,
-        category: 'limpieza',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
-        description: 'Desinfectante multiusos'
-      },
-      {
-        id: 5,
-        name: 'Escoba',
-        price: 4000,
         category: 'hogar',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
-        description: 'Escoba de cerdas suaves'
-      },
-      {
-        id: 6,
-        name: 'Trapo',
-        price: 2000,
-        category: 'hogar',
-        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop',
-        description: 'Trapo de limpieza'
+        image: 'https://www.semana.com/resizer/FNrhx6BbiBRD9nipdCQbJ7KXs6o=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/JINICSYNHFDKBKHNYTFN5MCEV4.jpg',
+        description: 'Cafe de marca generico'
       }
     ],
     tienda4: [
@@ -195,16 +171,16 @@ export default function StoreProducts() {
         name: 'Chocolate',
         price: 2000,
         category: 'dulces',
-        image: 'https://images.unsplash.com/photo-1548907040-4baa419d2b2b?w=400&h=300&fit=crop',
+        image: 'https://th.bing.com/th/id/R.8f1129031e0ae52164f073c62ff5b1fc?rik=7Keuajpu6PxxGg&pid=ImgRaw&r=0',
         description: 'Chocolate negro premium'
       },
       {
         id: 2,
-        name: 'Caramelos',
-        price: 1000,
+        name: 'Gomitas trululu',
+        price: 3000,
         category: 'dulces',
-        image: 'https://images.unsplash.com/photo-1553452118-621e1f860f43?w=400&h=300&fit=crop',
-        description: 'Caramelos surtidos'
+        image: 'https://th.bing.com/th/id/R.47a9635c4461ffc15b806f260f161775?rik=X%2bRaWHke38gKLg&pid=ImgRaw&r=0p',
+        description: 'Gomitas trululu sabores'
       },
       {
         id: 3,
@@ -216,27 +192,11 @@ export default function StoreProducts() {
       },
       {
         id: 4,
-        name: 'Chupetas',
+        name: 'Bon bon Bum',
         price: 500,
         category: 'dulces',
-        image: 'https://images.unsplash.com/photo-1553452118-621e1f860f43?w=400&h=300&fit=crop',
-        description: 'Chupetas de colores'
-      },
-      {
-        id: 5,
-        name: 'Bombones',
-        price: 4000,
-        category: 'dulces',
-        image: 'https://images.unsplash.com/photo-1548907040-4baa419d2b2b?w=400&h=300&fit=crop',
-        description: 'Bombones artesanales'
-      },
-      {
-        id: 6,
-        name: 'Gomitas',
-        price: 1500,
-        category: 'dulces',
-        image: 'https://images.unsplash.com/photo-1553452118-621e1f860f43?w=400&h=300&fit=crop',
-        description: 'Gomitas de frutas'
+        image: 'https://tse3.mm.bing.net/th/id/OIP.bciaRJeq85gI78aKLMvlOQHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+        description: 'Bon bon Bum de sabores variados'
       }
     ]
   };
@@ -297,13 +257,12 @@ export default function StoreProducts() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Buscar por nombre o descripción..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
         </div>
 
-        {/* Productos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">

@@ -56,7 +56,7 @@ export default function Login() {
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full placeholder:text-gray-300 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               placeholder="Ingresa tu usuario"
               required
             />
@@ -71,7 +71,7 @@ export default function Login() {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full placeholder:text-gray-300 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               placeholder="Ingresa tu contraseña"
               required
             />
@@ -84,15 +84,6 @@ export default function Login() {
             Iniciar Sesión
           </button>
         </form>
-
-        <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">
-            Usuario: <span className="font-mono bg-gray-100 px-2 py-1 rounded">admin</span>
-          </p>
-          <p className="text-sm text-gray-600">
-            Contraseña: <span className="font-mono bg-gray-100 px-2 py-1 rounded">123456</span>
-          </p>
-        </div>
       </div>
     </div>
   );

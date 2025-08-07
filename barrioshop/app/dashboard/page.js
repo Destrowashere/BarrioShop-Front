@@ -93,22 +93,6 @@ export default function Dashboard() {
               >
                 🏪 Tiendas
               </button>
-              <button
-                onClick={() => setActiveView('analytics')}
-                className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
-                  activeView === 'analytics' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                📊 Análisis
-              </button>
-              <button
-                onClick={() => setActiveView('settings')}
-                className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
-                  activeView === 'settings' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                ⚙️ Configuración
-              </button>
             </nav>
           </div>
         </div>
@@ -126,26 +110,6 @@ export default function Dashboard() {
                   <p className="text-lg text-gray-600 leading-relaxed">
                     ¡Apoya a los Tenderos de tu Barrio!
                   </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
-                    <div className="text-4xl mb-4">🤝</div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Apoyo Local</h3>
-                    <p className="text-gray-600">Ayuda a mantener vivas las tradiciones y costumbres de tu barrio</p>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
-                    <div className="text-4xl mb-4">💰</div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Economía Sostenible</h3>
-                    <p className="text-gray-600">Contribuye al desarrollo económico de tu comunidad</p>
-                  </div>
-                  
-                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
-                    <div className="text-4xl mb-4">🏘️</div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Comunidad Fuerte</h3>
-                    <p className="text-gray-600">Fortalece los lazos entre vecinos y comerciantes</p>
-                  </div>
                 </div>
 
                 <div className="text-center">
@@ -189,19 +153,6 @@ export default function Dashboard() {
             </div>
           )}
 
-          {activeView === 'analytics' && (
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Análisis y Estadísticas</h2>
-              <p className="text-gray-600">Aquí se mostrarían las estadísticas de ventas y análisis de las tiendas.</p>
-            </div>
-          )}
-
-          {activeView === 'settings' && (
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Configuración</h2>
-              <p className="text-gray-600">Aquí se mostrarían las opciones de configuración del sistema.</p>
-            </div>
-          )}
         </div>
       </div>
 
@@ -221,7 +172,7 @@ export default function Dashboard() {
               </button>
             </div>
             
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 ">
               <div className="w-20 h-20 bg-blue-500 rounded-full mx-auto flex items-center justify-center mb-4">
                 <span className="text-white text-2xl font-bold">A</span>
               </div>
@@ -232,11 +183,11 @@ export default function Dashboard() {
             <div className="space-y-4">
               <div className="flex justify-between items-center py-2 border-b">
                 <span className="text-gray-600">Rol:</span>
-                <span className="font-semibold">Administrador</span>
+                <span className="font-semibold text-black">Administrador</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b">
                 <span className="text-gray-600">Último acceso:</span>
-                <span className="font-semibold">Hoy</span>
+                <span className="font-semibold text-black">Hoy</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-gray-600">Estado:</span>

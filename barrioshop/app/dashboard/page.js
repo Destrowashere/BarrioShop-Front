@@ -1,15 +1,24 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useCart } from '../context/CartContext';
+import CartButton from '../components/CartButton';
 
 export default function Dashboard() {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
   const [activeView, setActiveView] = useState('home');
   const router = useRouter();
+  const { logout, isAuthenticated } = useCart();
 
   const handleLogout = () => {
+    logout();
     router.push('/');
   };
+
+  if (!isAuthenticated) {
+    router.push('/login');
+    return null;
+  }
 
   const handleStoreClick = (storeId) => {
     router.push(`/dashboard/stores/${storeId}`);
@@ -92,6 +101,12 @@ export default function Dashboard() {
                 }`}
               >
                 🏪 Tiendas
+              </button>
+              <button
+                onClick={() => router.push('/dashboard/admin')}
+                className="w-full text-left px-4 py-2 rounded-lg transition-colors text-gray-600 hover:bg-gray-100"
+              >
+                ⚙️ Administrar Productos
               </button>
             </nav>
           </div>
@@ -212,6 +227,7 @@ export default function Dashboard() {
           </div>
         </div>
       )}
+      <CartButton />
     </div>
   );
 }

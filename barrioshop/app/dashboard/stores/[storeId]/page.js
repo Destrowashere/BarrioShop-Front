@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import { useCart } from '../../../context/CartContext';
+import CartButton from '../../../components/CartButton';
 
 export default function StoreProducts() {
   const router = useRouter();
@@ -8,6 +10,7 @@ export default function StoreProducts() {
   const { storeId } = params;
   const [filter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const { addToCart, getProductsForStore } = useCart();
 
   // Datos hardcodeados de las tiendas actualizados
   const stores = {
@@ -202,7 +205,9 @@ export default function StoreProducts() {
   };
 
   const store = stores[storeId];
-  const storeProducts = products[storeId] || [];
+  const staticProducts = products[storeId] || [];
+  const dynamicProducts = getProductsForStore(storeId);
+  const storeProducts = [...staticProducts, ...dynamicProducts];
 
   // Filtrar productos
   const filteredProducts = storeProducts.filter(product => {
@@ -281,7 +286,10 @@ export default function StoreProducts() {
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-bold text-blue-600">{formatPrice(product.price)}</span>
-                  <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                  <button 
+                    onClick={() => addToCart(product, storeId, store.name)}
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                  >
                     Agregar
                   </button>
                 </div>
@@ -298,6 +306,7 @@ export default function StoreProducts() {
           </div>
         )}
       </div>
+      <CartButton />
     </div>
   );
 }

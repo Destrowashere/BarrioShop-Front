@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import CartButton from './components/CartButton';
 
 export default function Home() {
   const [filter] = useState('all');
@@ -159,6 +160,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <CartButton />
     </div>
   );
 }

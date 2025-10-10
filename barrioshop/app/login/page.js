@@ -1,15 +1,15 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
+import { useCart } from '../context/CartContext';
 
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
+  const { login } = useCart();
 
-  // Credenciales hardcodeadas
   const validUsername = 'admin';
   const validPassword = '123456';
 
@@ -18,7 +18,7 @@ export default function Login() {
     setError('');
 
     if (username === validUsername && password === validPassword) {
-      // Login exitoso - redirigir al dashboard
+      login(username);
       router.push('/dashboard');
     } else {
       setError('Usuario o contraseña incorrectos');

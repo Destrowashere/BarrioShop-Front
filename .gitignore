@@ -1,0 +1,20 @@
+# Entorno Virtual
+venv/
+
+
+# Python cache, tener MUY en cuenta correrlo con venv para que no les de problemas con el cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Bases de datos o logs (opcional para notas o READMES de to do list, o cualquier otro archivo que no sea necesario subir a github)
+*.log
+*.sqlite3

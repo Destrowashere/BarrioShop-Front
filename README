@@ -1,0 +1,106 @@
+# Barrio Shop
+
+Aplicación de escritorio para gestionar ventas de forma sencilla. Usa una **pila** (estructura de datos) para llevar el historial: la última venta registrada es la primera que puedes consultar.
+
+---
+
+## Requisitos previos
+
+- **Python 3.8 o superior** instalado en tu equipo.
+- Tener `pip` disponible (viene con Python).
+
+---
+
+## Instalación y dependencias
+
+### 1. Clonar o descargar el proyecto
+
+Abre la terminal en la carpeta del proyecto.
+
+### 2. Crear el entorno virtual
+
+Un entorno virtual evita conflictos con otras instalaciones de Python y mantiene las dependencias aisladas.
+
+```bash
+py -m venv venv
+```
+
+> Si `py` no funciona, prueba: `python -m venv venv`
+
+### 3. Activar el entorno virtual
+
+**Windows (PowerShell o CMD):**
+```bash
+.\venv\Scripts\activate
+```
+
+Verás `(venv)` al inicio de la línea de comandos cuando esté activo.
+
+### 4. Instalar las dependencias
+
+Con el entorno activado, instala todo lo necesario desde el archivo de requerimientos:
+
+```bash
+pip install -r requirements.txt
+```
+
+Esto instala CustomTkinter (interfaz gráfica) y el resto de dependencias del proyecto.
+
+---
+
+## Cómo ejecutar la aplicación
+
+Con el entorno virtual activado:
+
+```bash
+python main.py
+```
+
+---
+
+## Cómo funciona la aplicación
+
+### Interfaz visual
+
+Se usa **CustomTkinter**, una librería moderna que ofrece botones redondeados, modo oscuro y una apariencia limpia con poco código.
+
+### La pila de ventas (LIFO)
+
+El núcleo del programa es una **pila** (stack). Funciona como una pila de platos: **el último que pones arriba es el primero que sacas**.
+
+- **Registrar venta:** Se agrega una nueva venta encima de las anteriores.
+- **Ver última venta:** Se consulta la venta que está en la cima (la más reciente).
+- **Historial:** Muestra todas las ventas desde la más nueva hasta la más antigua.
+
+### Flujo de uso
+
+    Ejecutar para correr
+**python .\main.py**
+
+1. **Login:** Ingresa un usuario (cualquier texto) y haz clic en "Iniciar Sesión".
+2. **Panel de ventas:** Tras el login, aparecen los botones para registrar ventas, ver la última y consultar el historial.
+
+---
+
+## Estructura del proyecto
+
+| Archivo o carpeta | Descripción |
+|-------------------|-------------|
+| `main.py` | Código principal de la aplicación. |
+| `requirements.txt` | Lista de dependencias para instalar con `pip install -r requirements.txt`. |
+| `.gitignore` | Indica a Git que no suba la carpeta `venv` ni otros archivos innecesarios. |
+| `venv/` | Entorno virtual. No se sube al repositorio; cada persona lo crea en su máquina. |
+
+---
+
+## Consejos para evitar problemas
+
+- **Trabaja siempre con el entorno virtual activado.** Así evitas conflictos con librerías de otros proyectos.
+- Si cierras la terminal, tendrás que activar de nuevo el entorno con `.\venv\Scripts\activate` antes de ejecutar.
+- Si cambias de carpeta o proyecto, crea y activa un nuevo `venv` en ese proyecto.
+
+---
+
+## Trabajo en equipo
+
+Si varios desarrolladores trabajan en paralelo, pueden usar carpetas separadas (por ejemplo: `yenny/`, `william/`, `sebastian/`) para sus cambios. Cuando haya que integrar todo, se puede mover el código a un archivo o módulo principal común.

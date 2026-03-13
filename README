@@ -120,6 +120,29 @@ Para subir tu código al repositorio remoto:
 | Agregar remoto (solo la primera vez) | `git remote add origin https://github.com/Destrowashere/BarrioShop-Front.git` |
 | Subir cambios | `git push -u origin Python_Barrio_Shop_Felix` |
 
+### Crear y subir una nueva rama
+
+Si quieres trabajar en una rama separada (por ejemplo, para una nueva funcionalidad):
+
+```bash
+# Crear la rama y cambiarte a ella
+git checkout -b nombre-de-tu-rama
+
+# O en dos pasos:
+git branch nombre-de-tu-rama
+git checkout nombre-de-tu-rama
+```
+
+Después de hacer tus cambios, agregar y hacer commit:
+
+```bash
+git add .
+git commit -m "Descripción de los cambios"
+git push -u origin nombre-de-tu-rama
+```
+
+El `-u` en el primer push vincula tu rama local con la remota. En los siguientes pushes basta con `git push`.
+
 ### Errores comunes
 
 - **`git add -m`** — No existe. El mensaje va en `git commit -m "mensaje"`.

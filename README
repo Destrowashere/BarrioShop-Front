@@ -104,3 +104,37 @@ El núcleo del programa es una **pila** (stack). Funciona como una pila de plato
 ## Trabajo en equipo
 
 Si varios desarrolladores trabajan en paralelo, pueden usar carpetas separadas (por ejemplo: `yenny/`, `william/`, `sebastian/`) para sus cambios. Cuando haya que integrar todo, se puede mover el código a un archivo o módulo principal común.
+
+---
+
+## Subir cambios a GitHub
+
+Para subir tu código al repositorio remoto:
+
+### Pasos básicos
+
+| Paso | Comando |
+|------|---------|
+| Agregar archivos | `git add .` |
+| Hacer commit | `git commit -m "Tu mensaje"` |
+| Agregar remoto (solo la primera vez) | `git remote add origin https://github.com/Destrowashere/BarrioShop-Front.git` |
+| Subir cambios | `git push -u origin Python_Barrio_Shop_Felix` |
+
+### Errores comunes
+
+- **`git add -m`** — No existe. El mensaje va en `git commit -m "mensaje"`.
+- **`git remote add`** — Debe escribirse en una sola línea: el nombre del remoto y la URL juntos.
+- **`git push`** sin remoto — Primero configura el remoto con `git remote add origin <url>`.
+
+### Verificar remoto
+
+```bash
+git remote -v
+```
+
+Si el remoto está mal configurado, elimínalo y créalo de nuevo:
+
+```bash
+git remote remove origin
+git remote add origin https://github.com/Destrowashere/BarrioShop-Front.git
+```
